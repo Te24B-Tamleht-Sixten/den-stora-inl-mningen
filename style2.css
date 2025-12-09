@@ -3,6 +3,7 @@ body
     display: grid;
     grid-template-areas: 'logga'
     'bild';
+    background-color: #faf5d8;
 }
 a
 {
