@@ -1,0 +1,82 @@
+body
+{
+    display: grid;
+    grid-template-areas: 
+    'nav nav nav nav nav nav'
+    'banneradd produkterna produkterna produkterna produkterna produkterna'
+    'banneradd produkterna produkterna produkterna produkterna produkterna'
+    'banneradd produkterna produkterna produkterna produkterna produkterna'
+    'footer footer footer footer footer footer'
+    ;
+    column-gap: 10px;
+}
+
+nav
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: nav;
+}
+nav > a
+{
+    text-align: center;
+}
+
+aside
+{
+    grid-area: banneradd;
+    border: 2px solid black;
+}
+
+main
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: produkterna;
+}
+
+main > article > a > img 
+{
+    max-height: 200px;
+}
+main > article > p
+{
+    text-align: center;
+}
+
+footer
+{
+    grid-area: footer;
+    justify-self: center;
+}
+
+.LNav
+{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.MNav
+{
+    max-width: 100;
+    max-height: 100px;
+}
+.RNav
+{
+    max-width: 100;
+    max-height: 100px;
+}
+
+.amazonreklam
+{
+    grid-area: banneradd;
+}
+
+.produkterna
+{
+    grid-area: produkterna;
+}

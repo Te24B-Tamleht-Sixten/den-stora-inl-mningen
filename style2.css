@@ -1,0 +1,19 @@
+body
+{
+    display: grid;
+    grid-template-areas: 'logga'
+    'bild';
+}
+a
+{
+    justify-self: left;
+}
+a > img{
+    max-height: 100px;
+}
+
+img
+{
+    justify-self: center;
+    max-height: 500px;
+}
